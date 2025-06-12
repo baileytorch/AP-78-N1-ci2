@@ -48,6 +48,7 @@ diccionario_1 = {
     'Género':'Masculino'
 }
 print(type(diccionario_1))
+print(len(diccionario_1))
 print(diccionario_1)
 
 # Accediendo a los datos mediante la CLAVE
@@ -74,3 +75,37 @@ print(diccionario_1.values())
 diccionario_1.clear()
 print(diccionario_1)
 
+# CONJUNTOS
+# Un conjunto es una colección DESORDENADA y MUTABLE de elementos de cualquier tipo de datos,
+# los elementos se separan por comas.
+conjunto_1 = {'Erick Bailey',49,True}
+conjunto_2 = {False,56.1}
+print(type(conjunto_1))
+print(len(conjunto_1))
+
+# Agregando elementos a un conjunto
+conjunto_1.add(False)
+print(conjunto_1)
+
+# Eliominando un elemento al azar del conjunto
+conjunto_1.pop()
+
+# Eliominando un elemento específico del conjunto
+conjunto_1.remove(49)
+print(conjunto_1)
+
+# Agregamos un conjunto a otro mediante UPDATE
+conjunto_1.update(conjunto_2)
+print(conjunto_1)
+
+# Averiguando si un conjunto es sub-conjunto de otro
+print(conjunto_2.issubset(conjunto_1))
+
+# TUPLAS
+# Una tupla es una colección ORDENADA de elementos de cualquier tipo de datos,
+# los elementos se separan por comas.
+tupla_1 = ('Erick Bailey',49,True)
+print(type(tupla_1))
+print(len(tupla_1))
+print(tupla_1.count(49))
+print(tupla_1.index(49))

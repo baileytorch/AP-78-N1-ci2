@@ -37,6 +37,7 @@ numero_2 = 12.63
 # print(dato_falso)
 
 print(type(cadena_de_texto_1))
+print(len(cadena_de_texto_1))
 print(type(numero_entero))
 print(type(numero_decimal))
 print(type(dato_verdadero))
