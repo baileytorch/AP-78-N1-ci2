@@ -6,9 +6,9 @@ cadena_de_texto_3 = """Este es una tercera
 cadena de caracteres
 de múltiples líneas"""
 
-# print('Esto es una cadena de texto')
-# print('Esto es una cadena de texto con "comillas dobles"')
-# print("Esto es una cadena de texto con 'comillas simples'")
+print('Esto es una cadena de texto')
+print('Esto es una cadena de texto con "comillas dobles"')
+print("Esto es una cadena de texto con 'comillas simples'")
 
 # Datos de tipo numérico
 # int
@@ -21,20 +21,20 @@ numero_decimal = 56.32
 dato_verdadero = True
 dato_falso = False
 
-# print(cadena_de_texto_1)
-# print(cadena_de_texto_2)
-# print(cadena_de_texto_3)
+print(cadena_de_texto_1)
+print(cadena_de_texto_2)
+print(cadena_de_texto_3)
 
 saludo = "Buen día"
-# nombre = input("Escriba su nombre: ")
-# texto_final = saludo + " " + nombre
-# print(texto_final)
+nombre = input("Escriba su nombre: ")
+texto_final = saludo + " " + nombre
+print(texto_final)
 
 numero_1 = 35
 numero_2 = 12.63
-# print(numero_1 * numero_2)
+print(numero_1 * numero_2)
 
-# print(dato_falso)
+print(dato_falso)
 
 print(type(cadena_de_texto_1))
 print(len(cadena_de_texto_1))
