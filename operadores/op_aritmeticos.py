@@ -34,3 +34,6 @@ resto = 9 % 3
 print(resto)
 print(9%2)
 print(6%2) # Cualquier número cuyo módulo 2 es 0, es un número PAR
+
+# print('Dividiendo por 0...')
+# print(8/0) # Error de división por 0
