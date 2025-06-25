@@ -18,5 +18,14 @@ for i in range(len(usuarios)):
 
 # Recorrer un string con FOR
 cadena = "Introducción Programación"
-for letra in cadena:
-    print(letra.upper())
+# for letra in cadena:
+#     print(letra.upper())
+
+diccionario = {
+    'nombre':'Erick',
+    'apellido':'Bailey',
+    'edad':49
+}
+
+for clave,valor in diccionario.items():
+    print(f'Clave: {clave}, valor: {valor}')
