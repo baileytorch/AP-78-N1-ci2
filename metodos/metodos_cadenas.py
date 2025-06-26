@@ -17,3 +17,7 @@ print(nombre.find('e'))
 print(nombre.endswith('x'))
 print(nombre.endswith('y'))
 print(nombre.replace('bailey','torch'))
+
+# Métod SPLIT divide una cadena de texto en un caracter específico
+asignatura_split = asignatura.split('O')
+print(asignatura_split)
