@@ -57,20 +57,38 @@ def menu_conversiones():
         print('2.- Celsius')
         print('3.- Fahrenheit')
 
+def seleccionar_escala():
+    menu_conversiones()
+    escala = ''
+    escala = input('Seleccione su opción [1-3]: ')
+    if escala == '1' or escala == '2' or escala == '3':
+        return escala
+    else:
+        print('Opción incorrecta... Volviendo al principio...')
+        return ''
+
 def interfaz_usuario():
     print('=================================')
     print('Sistema Conversor de Temperaturas')
     print('=================================')
     print()
     while True:
+        print()
         print('¿Desde qué escala de temperatura desea convertir?')
-        menu_conversiones()
-        escala_inicial = input('Seleccione su opción [1-3]: ')
+        escala_inicial = seleccionar_escala()
+        if escala_inicial == '':
+            continue
+
         print()
         print('¿A qué escala de temperatura desea convertir?')
-        menu_conversiones()
-        escala_final = input('Seleccione su opción [1-3]: ')
-        print()
+        escala_final = seleccionar_escala()
+        if escala_final == '':
+            continue
+
+        if escala_inicial == escala_final:
+            print('Opción Incorrecta, intente nuevamente')
+            continue
+
         temperatura_usuario = input('Ingrese temperatura a convertir: ')
         try:
             resultado = 0
@@ -104,11 +122,12 @@ def interfaz_usuario():
                     resultado = fahrenheit_celsius(temperatura)
                 else:
                     print('Opciones deben ser distintas... Intente nuevamente')
-            print(f'{temperatura_usuario}{inicio} = {resultado}{final}')
-            print()
+            if resultado != 0:
+                print(f'{temperatura_usuario}{inicio} = {resultado}{final}')
+                print()
             continuar = input('¿Desea convertir otra temperatura [S-N]? ')
-            print()
             if continuar.lower() == 'no' or continuar.lower() == 'n':
+                print('saliendo...')
                 break
         except:
             print('Valor ingresado NO corresponde...')
