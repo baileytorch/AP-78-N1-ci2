@@ -1,3 +1,6 @@
+import math
+import random
+
 # Datos de tipo cadena de texto
 # string
 cadena_de_texto_1 = 'Cadena de texto'
@@ -15,6 +18,11 @@ print("Esto es una cadena de texto con 'comillas simples'")
 numero_entero = 49
 # float
 numero_decimal = 56.32
+lista_numeros = []
+for i in range(10):
+    lista_numeros.append(random.randint(1, 100))
+print(f'Factorial de 5 = {math.factorial(5)}')
+print(f'FSUM de {lista_numeros} = {math.fsum(lista_numeros)}')
 
 # Datos de tipo lógico
 # bool
